@@ -1,0 +1,163 @@
+* {
+  margin: 0%;
+  padding: 0%; }
+
+.Headboard {
+  height: 100px;
+  width: 100%;
+  background-color: whitesmoke;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  .Headboard__logo {
+    height: 100px;
+    width: 200px; }
+    .Headboard__logo__img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover; }
+  .Headboard__menu {
+    width: 50%; }
+    .Headboard__menu__nav {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 50px; }
+      .Headboard__menu__nav__list {
+        display: inline; }
+        .Headboard__menu__nav__list__link {
+          font-size: 22px;
+          font-family: 'Karla', sans-serif;
+          text-decoration: none;
+          color: black;
+          padding: 5px 10px; }
+        .Headboard__menu__nav__list__link:hover {
+          background-color: black;
+          border-radius: 50px;
+          color: red; }
+
+.welcome {
+  padding-top: 120px;
+  height: 900px;
+  background-image: url("../img/laptops-para-programadores.jpg");
+  background-repeat: no-repeat;
+  background-size: 125% 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .welcome__welcome {
+    letter-spacing: 10px;
+    color: red; }
+  .welcome__title {
+    font-size: 90px;
+    color: white;
+    font-family: 'Birthstone', cursive; }
+  .welcome__subtitle {
+    font-size: 25px;
+    color: white;
+    margin-top: 200px; }
+
+.aboutUs {
+  height: 500px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 100px 300px 100px;
+  grid-gap: 20px; }
+  .aboutUs__title {
+    margin-top: 50px;
+    font-family: 'Playball', cursive;
+    font-size: 30px; }
+  .aboutUs__one {
+    grid-area: 2 / 1; }
+    .aboutUs__one__link__img {
+      height: 100%;
+      width: 100%; }
+    .aboutUs__one__link--p {
+      text-decoration: overline;
+      grid-area: 3/1;
+      text-align: center;
+      color: maroon;
+      font-size: 22px;
+      margin-top: 25px;
+      width: 50%; }
+      .aboutUs__one__link--p p {
+        margin-top: 15px;
+        font-family: 'IBM Plex Sans Hebrew', sans-serif; }
+  .aboutUs__two {
+    grid-area: 2 / 2; }
+  .aboutUs__tree {
+    grid-area: 2 / 3; }
+
+.contact {
+  margin-top: 100px;
+  height: 800px;
+  background-image: url("../img/Fondo de contacto.jpeg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%; }
+  .contact__wpp {
+    padding-top: 100px;
+    margin-bottom: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .contact__wpp__title {
+      color: white;
+      font-size: 50px;
+      font-family: 'Oswald', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 5px; }
+    .contact__wpp__subtitle {
+      color: red;
+      font-size: 25px; }
+    .contact__wpp__link {
+      margin-top: 25px;
+      border-radius: 50px;
+      padding: 10px;
+      font-size: 20px;
+      background-color: black;
+      color: red;
+      text-decoration: none; }
+  .contact__box {
+    text-align: center; }
+    .contact__box__title {
+      color: silver;
+      margin-bottom: 15px;
+      font-size: 25px;
+      font-family: 'IBM Plex Sans Hebrew', sans-serif;
+      text-transform: uppercase; }
+    .contact__box__forms {
+      height: 300px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly; }
+      .contact__box__forms__name, .contact__box__forms__email, .contact__box__forms__phone {
+        height: 40px;
+        width: 350px;
+        text-align: center;
+        border: none;
+        outline: none;
+        background: black;
+        border-bottom: 2px solid red;
+        color: white; }
+      .contact__box__forms__textarea {
+        text-align: center;
+        border: none;
+        outline: none;
+        background: black;
+        border-bottom: 2px solid red;
+        color: white; }
+      .contact__box__forms__button {
+        margin-top: 50px; }
+        .contact__box__forms__button .submit, .contact__box__forms__button .reset {
+          margin: 0px 10px;
+          background-color: red;
+          color: black;
+          font-size: 15px;
+          border: none;
+          height: 35px;
+          width: 200px; }
+
+footer {
+  background-color: silver; }

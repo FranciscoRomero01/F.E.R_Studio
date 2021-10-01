@@ -1,0 +1,178 @@
+.welcome{
+    padding-top: 120px;
+    height: 900px;
+    background-image: url('../img/laptops-para-programadores.jpg');
+    background-repeat: no-repeat;
+    background-size: 125% 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__welcome{
+        letter-spacing: 10px;
+        color: red;
+    }
+
+    &__title{
+        font-size: 90px;
+        color: white;
+        font-family: 'Birthstone', cursive;
+    }
+
+    &__subtitle{
+        font-size: 25px;
+        color: white;
+        margin-top: 200px;
+    }
+}
+
+
+.aboutUs{
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px 300px 100px;
+    grid-gap: 20px;
+
+    &__title{
+        margin-top: 50px;
+        font-family: 'Playball', cursive;
+        font-size: 30px;
+    }
+
+    &__one{
+        grid-area: 2 / 1;
+
+        &__link{
+            &__img{
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+        &__link--p{
+            text-decoration: overline;
+            grid-area: 3/1;
+            text-align: center;
+            color: maroon;
+            font-size: 22px;
+            margin-top: 25px;
+            width: 50%;
+
+            p{
+                margin-top: 15px;
+                font-family: 'IBM Plex Sans Hebrew', sans-serif;
+            }
+        }
+    }
+
+    &__two{
+        grid-area: 2 / 2;
+    }
+
+    &__tree{
+        grid-area: 2 / 3;
+    }
+}
+
+
+.contact{
+    margin-top: 100px;
+    height: 800px;
+    background-image: url('../img/Fondo\ de\ contacto.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    &__wpp{
+        padding-top: 100px;
+        margin-bottom: 120px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__title{
+            color: white;
+            font-size: 50px;
+            font-family: 'Oswald', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+        }
+
+        &__subtitle{
+            color: red;
+            font-size: 25px;
+        }
+
+        &__link{
+            margin-top: 25px;
+            border-radius: 50px;
+            padding: 10px;
+            font-size: 20px;
+            background-color: black;
+            color: red;
+            text-decoration: none;
+        }
+    }
+
+    &__box{
+        text-align: center;
+        
+
+        &__title{
+            color: silver;
+            margin-bottom: 15px;
+            font-size: 25px;
+            font-family: 'IBM Plex Sans Hebrew', sans-serif;
+            text-transform: uppercase;
+        }
+
+        &__forms{
+            height: 300px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+
+            &__name, &__email, &__phone{
+                height: 40px;
+                width: 350px;
+                text-align: center;
+                border: none;
+                outline: none;
+                background: black;
+                border-bottom: 2px solid red;
+                color: white;
+            }
+
+            &__textarea{
+                text-align: center;
+                border: none;
+                outline: none;
+                background: black;
+                border-bottom: 2px solid red;
+                color: white;
+            }
+
+            &__button{
+                margin-top: 50px;
+
+                .submit, .reset{
+                    margin: 0px 10px;
+                    background-color: red;
+                    color: black;
+                    font-size: 15px;
+                    border: none;
+                    height: 35px;
+                    width: 200px;
+                }
+            }
+        }
+    }
+}
+
+
+
+footer{
+    background-color: silver;
+}

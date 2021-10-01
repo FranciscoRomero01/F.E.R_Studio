@@ -1,0 +1,49 @@
+.Headboard{
+    height: 100px;
+    width: 100%;
+    background-color: whitesmoke;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+
+    &__logo{
+        height: 100px;
+        width: 200px;
+
+        &__img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__menu{
+        width: 50%;
+
+        &__nav{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 50px;
+
+            &__list{
+                display: inline;
+                
+                &__link{
+                    font-size: 22px;
+                    font-family: 'Karla', sans-serif;
+                    text-decoration: none;
+                    color: black;
+                    padding: 5px 10px;
+                }
+
+                &__link:hover{
+                    background-color: rgb(0, 0, 0);
+                    border-radius: 50px;
+                    color: red;
+                }
+            }
+        }
+    }
+}
