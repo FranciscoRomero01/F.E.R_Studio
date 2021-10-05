@@ -77,7 +77,7 @@
       text-decoration: overline;
       grid-area: 3/1;
       text-align: center;
-      color: maroon;
+      color: #610404;
       font-size: 22px;
       margin-top: 25px;
       width: 50%; }
@@ -139,21 +139,21 @@
         border: none;
         outline: none;
         background: black;
-        border-bottom: 2px solid red;
+        border-bottom: 4px solid #c80000;
         color: white; }
       .contact__box__forms__textarea {
         text-align: center;
         border: none;
         outline: none;
         background: black;
-        border-bottom: 2px solid red;
+        border-bottom: 4px solid #c80000;
         color: white; }
       .contact__box__forms__button {
         margin-top: 50px; }
         .contact__box__forms__button .submit, .contact__box__forms__button .reset {
           margin: 0px 10px;
-          background-color: red;
-          color: black;
+          background-color: #c80000;
+          color: white;
           font-size: 15px;
           border: none;
           height: 35px;
@@ -161,3 +161,26 @@
 
 footer {
   background-color: silver; }
+
+.footer {
+  background-color: silver;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
+  .footer__contact {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; }
+    .footer__contact__callUs, .footer__contact__writeUs {
+      font-size: 20px;
+      text-shadow: 2px 2px 4px #000000;
+      font-weight: bold; }
+  .footer__copy {
+    width: 100%;
+    background-color: #850e0e;
+    text-align: center;
+    color: whitesmoke; }
+    .footer__copy__link {
+      color: whitesmoke;
+      text-decoration: none; }
