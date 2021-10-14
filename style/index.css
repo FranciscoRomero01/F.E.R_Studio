@@ -42,6 +42,7 @@
   background-image: url("../img/laptops-para-programadores.jpg");
   background-repeat: no-repeat;
   background-size: 125% 100%;
+  background-attachment: fixed;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -59,42 +60,58 @@
     margin-top: 200px; }
 
 .aboutUs {
-  height: 500px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 100px 300px 100px;
-  grid-gap: 20px; }
+  height: 1400px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap; }
   .aboutUs__title {
     margin-top: 50px;
     font-family: 'Playball', cursive;
     font-size: 30px; }
   .aboutUs__one {
-    grid-area: 2 / 1; }
+    margin-top: 50px;
+    background-color: #0c0c0c;
+    height: 400px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    padding-bottom: 25px; }
     .aboutUs__one__link__img {
-      height: 100%;
-      width: 100%; }
+      height: 100%; }
     .aboutUs__one__link--p {
       text-decoration: overline;
-      grid-area: 3/1;
       text-align: center;
-      color: #610404;
+      color: whitesmoke;
       font-size: 22px;
       margin-top: 25px;
       width: 50%; }
       .aboutUs__one__link--p p {
-        margin-top: 15px;
+        margin-top: 25%;
         font-family: 'IBM Plex Sans Hebrew', sans-serif; }
   .aboutUs__two {
-    grid-area: 2 / 2; }
+    margin-top: 50px;
+    background-color: #0c0c0c;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 25px; }
   .aboutUs__tree {
-    grid-area: 2 / 3; }
+    margin-top: 50px;
+    background-color: #0c0c0c;
+    height: 400px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    padding-bottom: 25px; }
 
 .contact {
-  margin-top: 100px;
+  margin-top: 180px;
   height: 800px;
   background-image: url("../img/Fondo de contacto.jpeg");
   background-repeat: no-repeat;
-  background-size: 100% 100%; }
+  background-size: 100% 100%;
+  background-attachment: fixed; }
   .contact__wpp {
     padding-top: 100px;
     margin-bottom: 120px;
@@ -158,9 +175,6 @@
           border: none;
           height: 35px;
           width: 200px; }
-
-footer {
-  background-color: silver; }
 
 .footer {
   background-color: silver;
