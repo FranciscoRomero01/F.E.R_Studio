@@ -1,0 +1,31 @@
+.footer{
+    background-color: silver;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    &__contact{
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+        &__callUs, &__writeUs{
+            font-size: 20px;
+            text-shadow: 2px 2px 4px #000000;
+            font-weight: bold;
+        }
+    }
+
+    &__copy{
+        width: 100%;
+        background-color: rgb(133, 14, 14);
+        text-align: center;
+        color: whitesmoke;
+
+        &__link{
+            color: whitesmoke;
+            text-decoration: none;
+        }
+    }
+}

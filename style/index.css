@@ -2,7 +2,10 @@
   margin: 0%;
   padding: 0%; }
 
-.Headboard {
+a:hover {
+  cursor: pointer; }
+
+.headboard {
   height: 100px;
   width: 100%;
   background-color: whitesmoke;
@@ -10,31 +13,36 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between; }
-  .Headboard__logo {
+  .headboard__logo {
     height: 100px;
     width: 200px; }
-    .Headboard__logo__img {
+    .headboard__logo__img {
       height: 100%;
       width: 100%;
       object-fit: cover; }
-  .Headboard__menu {
+  .headboard__menu {
     width: 50%; }
-    .Headboard__menu__nav {
+    .headboard__menu__nav {
       display: flex;
       justify-content: space-around;
       margin-top: 50px; }
-      .Headboard__menu__nav__list {
+      .headboard__menu__nav__list {
         display: inline; }
-        .Headboard__menu__nav__list__link {
+        .headboard__menu__nav__list__link {
           font-size: 22px;
           font-family: 'Karla', sans-serif;
           text-decoration: none;
           color: black;
           padding: 5px 10px; }
-        .Headboard__menu__nav__list__link:hover {
+        .headboard__menu__nav__list__link:hover {
           background-color: black;
           border-radius: 50px;
-          color: red; }
+          color: red;
+          cursor: pointer; }
+
+.headboard2 {
+  position: relative;
+  height: 50px; }
 
 .welcome {
   padding-top: 120px;
@@ -60,7 +68,7 @@
     margin-top: 200px; }
 
 .aboutUs {
-  height: 1400px;
+  height: 920px;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap; }
@@ -175,6 +183,8 @@
           border: none;
           height: 35px;
           width: 200px; }
+        .contact__box__forms__button .submit:hover, .contact__box__forms__button .reset:hover {
+          cursor: pointer; }
 
 .footer {
   background-color: silver;

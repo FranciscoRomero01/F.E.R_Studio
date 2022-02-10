@@ -1,5 +1,11 @@
-@import 'generales.scss';
+@import 'generales';
 
-@import 'header.scss';
+@import 'header';
 
-@import 'main.scss';
+@import 'sections/welcome';
+
+@import 'sections/aboutUs';
+
+@import 'sections/contact';
+
+@import 'footer';
