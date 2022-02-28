@@ -1,0 +1,87 @@
+@media screen and (max-width: 960px) {
+    
+    .welcome{
+        &__welcome, &__title, &__subtitle{
+            text-align: center;
+        }
+    }
+
+    .contact{
+        height: 900px;
+
+        &__box{
+            &__forms{
+                height: 400px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 750px){
+
+    .headboard{
+        flex-direction: column;
+        align-items: center;
+        height: 120px;
+
+        &__logo{
+            height: 80px;
+        }
+
+        &__menu{
+            width: 100%;
+
+            &__nav{
+                justify-content: space-evenly;
+                margin: 0px 25px 0px 61px;
+
+                &__list{
+                    border: solid 2px black;
+                    padding: 0px 15px;
+
+                    &__link:hover{
+                        border-radius: 0px;
+                        padding: 0%;
+                    }
+                }
+
+                &__list:hover{
+                    background-color: black;
+                    color: rgb(255, 0, 0);
+                }
+
+                
+            }
+        }
+    }
+
+    .welcome{
+        height: 700px;
+    }
+
+    .aboutUs{
+        height: 1200px;
+        align-items: center;
+        background-color: rgb(12, 12, 12);
+
+        &__one, &__two{
+            @include aboutUsResponsive;
+        }
+    }
+
+    .contact{
+        height: 1000px;
+        &__box{
+            &__forms{
+                height: 500px;
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 575px){
+    .headboard__menu__nav__list__link{
+        font-size: 15px;
+    }
+}

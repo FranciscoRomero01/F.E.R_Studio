@@ -1,0 +1,51 @@
+@mixin aboutUs {
+    margin-top: 50px;
+    background-color: rgb(12, 12, 12);
+    height: 400px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    padding-bottom: 25px;
+
+    &__link{
+        &__img{
+            height: 100%;
+        }
+    }
+
+    &__link--p{
+        text-decoration: overline;
+        text-align: center;
+        color: whitesmoke;
+        font-size: 22px;
+        margin-top: 25px;
+        width: 50%;
+        p{
+            margin-top: 25%;
+            font-family: 'IBM Plex Sans Hebrew', sans-serif;
+        }
+    }
+}
+
+@mixin aboutUsResponsive {
+    height: 500px;
+    flex-direction: column;
+    margin-top: 100px;
+    align-items: center;
+    background: none;
+
+    &__link{
+        &__img{
+            width: 100%;
+            height: 500px;
+        }
+    }
+
+    &__link--p{
+        margin-top: 0%;
+
+        p{
+            margin-top: 15px;
+        }
+    }
+}

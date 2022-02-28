@@ -1,5 +1,7 @@
 @import 'generales';
 
+@import './mixin';
+
 @import 'header';
 
 @import 'sections/welcome';
@@ -9,3 +11,6 @@
 @import 'sections/contact';
 
 @import 'footer';
+
+@import 'responsive';
+

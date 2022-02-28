@@ -101,9 +101,22 @@ a:hover {
     background-color: #0c0c0c;
     height: 400px;
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     justify-content: center;
-    padding-bottom: 25px; }
+    padding-bottom: 25px;
+    flex-direction: row; }
+    .aboutUs__two__link__img {
+      height: 100%; }
+    .aboutUs__two__link--p {
+      text-decoration: overline;
+      text-align: center;
+      color: whitesmoke;
+      font-size: 22px;
+      margin-top: 25px;
+      width: 50%; }
+      .aboutUs__two__link--p p {
+        margin-top: 25%;
+        font-family: 'IBM Plex Sans Hebrew', sans-serif; }
   .aboutUs__tree {
     margin-top: 50px;
     background-color: #0c0c0c;
@@ -208,3 +221,60 @@ a:hover {
     .footer__copy__link {
       color: whitesmoke;
       text-decoration: none; }
+
+@media screen and (max-width: 960px) {
+  .welcome__welcome, .welcome__title, .welcome__subtitle {
+    text-align: center; }
+  .contact {
+    height: 900px; }
+    .contact__box__forms {
+      height: 400px; } }
+
+@media screen and (max-width: 750px) {
+  .headboard {
+    flex-direction: column;
+    align-items: center;
+    height: 120px; }
+    .headboard__logo {
+      height: 80px; }
+    .headboard__menu {
+      width: 100%; }
+      .headboard__menu__nav {
+        justify-content: space-evenly;
+        margin: 0px 25px 0px 61px; }
+        .headboard__menu__nav__list {
+          border: solid 2px black;
+          padding: 0px 15px; }
+          .headboard__menu__nav__list__link:hover {
+            border-radius: 0px;
+            padding: 0%; }
+        .headboard__menu__nav__list:hover {
+          background-color: black;
+          color: red; }
+  .welcome {
+    height: 700px; }
+  .aboutUs {
+    height: 1200px;
+    align-items: center;
+    background-color: #0c0c0c; }
+    .aboutUs__one, .aboutUs__two {
+      height: 500px;
+      flex-direction: column;
+      margin-top: 100px;
+      align-items: center;
+      background: none; }
+      .aboutUs__one__link__img, .aboutUs__two__link__img {
+        width: 100%;
+        height: 500px; }
+      .aboutUs__one__link--p, .aboutUs__two__link--p {
+        margin-top: 0%; }
+        .aboutUs__one__link--p p, .aboutUs__two__link--p p {
+          margin-top: 15px; }
+  .contact {
+    height: 1000px; }
+    .contact__box__forms {
+      height: 500px; } }
+
+@media screen and (max-width: 575px) {
+  .headboard__menu__nav__list__link {
+    font-size: 15px; } }
