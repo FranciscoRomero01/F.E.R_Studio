@@ -40,9 +40,24 @@ a:hover {
           color: red;
           cursor: pointer; }
 
-.headboard2 {
-  position: relative;
-  height: 50px; }
+.headboard__menu2 {
+  display: none; }
+  .headboard__menu2 .submenu__menu {
+    display: flex;
+    flex-direction: column; }
+    .headboard__menu2 .submenu__menu__list {
+      display: inline; }
+      .headboard__menu2 .submenu__menu__list__link {
+        font-size: 22px;
+        font-family: 'Karla', sans-serif;
+        text-decoration: none;
+        color: black;
+        padding: 5px 10px; }
+      .headboard__menu2 .submenu__menu__list__link:hover {
+        background-color: black;
+        border-radius: 50px;
+        color: red;
+        cursor: pointer; }
 
 .welcome {
   padding-top: 120px;
@@ -276,5 +291,41 @@ a:hover {
       height: 500px; } }
 
 @media screen and (max-width: 575px) {
-  .headboard__menu__nav__list__link {
-    font-size: 15px; } }
+  .headboard {
+    flex-direction: row;
+    background: white; }
+    .headboard__menu {
+      display: none; }
+    .headboard__menu2 {
+      display: inline; }
+      .headboard__menu2 .submenu__menu {
+        padding: 0px 10px;
+        position: fixed;
+        top: 80px;
+        right: 0%;
+        width: 40%;
+        height: 0%;
+        background-color: black;
+        z-index: 200;
+        overflow-x: hidden;
+        transition: all .5s;
+        opacity: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; }
+        .headboard__menu2 .submenu__menu__list__link {
+          color: red;
+          font-size: 15px; }
+    .headboard .cerrarMenu {
+      display: none; }
+  .welcome {
+    height: 350px; }
+    .welcome__welcome, .welcome__title, .welcome__subtitle {
+      font-size: 15px;
+      padding: 0px 10px; }
+  .aboutUs__one {
+    height: 300px; }
+  .contact {
+    height: 1125px; }
+    .contact__wpp__title, .contact__wpp__subtitle {
+      text-align: center; } }
